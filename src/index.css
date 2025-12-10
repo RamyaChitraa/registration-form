@@ -1,0 +1,136 @@
+/* FULL SCREEN BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+
+.overlay-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./assests/background.jpg") no-repeat center;
+  background-size: cover;
+  filter: blur(2px) brightness(0.6);
+  z-index: -1;
+}
+
+/* CONTAINER */
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BIGGER MAIN BOX */
+.login-box {
+  width: 500px;          /* 👈 BIGGER */
+  background: rgba(0, 0, 0, 0.55);
+  padding: 50px 40px;    /* 👈 Bigger padding */
+  border-radius: 22px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 28px cyan;
+  box-sizing: border-box;
+}
+
+/* TITLE */
+.login-box h2 {
+  color: white;
+  font-size: 32px;       /* 👈 Bigger Text */
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* INPUT WRAPPER */
+.input-group {
+  position: relative;
+  width: 100%;
+  margin: 22px 0;
+  box-sizing: border-box;
+}
+
+/* ICON */
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: cyan;
+  font-size: 20px;
+}
+
+/* INPUT */
+.input-group input {
+  width: 100%;
+  padding: 16px 55px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 17px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 12px cyan;
+}
+
+.input-group input::placeholder {
+  color: white;
+  opacity: 0.85;
+}
+
+/* OPTIONS */
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 6px;
+  color: white;
+}
+
+.options a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* LOGIN BUTTON */
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 35px;
+  background: cyan;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 22px cyan;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 30px cyan;
+}
+
+/* REGISTER */
+.register-text {
+  margin-top: 18px;
+  font-size: 15px;
+  color: white; 
+}
+
+.register-text a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
